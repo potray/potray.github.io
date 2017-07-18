@@ -1,172 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Daniel Díaz Salas' Webpage</title>
-    <link type="text/css" rel=stylesheet href=css/materialize.min.css>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Daniel Díaz Salas' Webpage</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 </head>
 <body>
 <header></header>
 <main>
-    <div class="container">
-        <h1>Work In Progress (if you see this, there is stuff to be done in this page)</h1>
-        <h3>Welcome to Daniel Díaz Salas's Personal Webpage!</h3>
-        <h5>Here you will find some info about me.</h5>
-        <div class=divider></div>
-        <h2>Who am I?</h2>
-        <div class=row id="photo-card">
-            <div class="col s12 m7">
-                <div class=card>
-                    <div class=card-image>
-                        <img src=img/Graduation.JPG>
-                        <span class=card-title>Yes, that's me!</span>
-                    </div>
-                    <div class=card-content>
-                        <p>This is me. Or was, in 2014, in my graduation. But it's the perfect photo to make an
-                           introduction, isn't it?</p>
-                    </div>
-                    <div class=card-action>
-                        <!--TODO go to "more about me"-->
-                        <a href=#>More about me</a>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <h1>Work In Progress (if you see this, there is stuff to be done in this page)</h1>
+    <h3>Welcome to Daniel Díaz Salas's Personal Webpage!</h3>
+    <h5>Here you will find some info about me.</h5>
+    <div class=divider></div>
+    <h2>Who am I?</h2>
+    <div class=row id="photo-card">
+      <div class="col s12 m7">
+        <div class=card>
+          <div class=card-image>
+            <img src=img/Graduation.JPG>
+            <span class=card-title>Yes, that's me!</span>
+          </div>
+          <div class=card-content>
+            <p>This is me. Or was, in 2014, in my graduation. But it's the perfect photo to make an
+              introduction, isn't it?</p>
+          </div>
+          <div class=card-action>
+            <!--TODO go to "more about me"-->
+            <a href=#>More about me</a>
+          </div>
         </div>
-        <p>I'm a Computer Engineer specialized in Software Engineer. I finished my Degree in Computer Engineering in
-           2014, and in 2016 I finished my Master's Degree in Computer Engineering, both of them in the <a
-                    href=http://etsiit.ugr.es/>E.T.S.I.I.T of Granada</a>. I specialized in Software Engineering since I
-           always enjoyed programming.</p>
-        <p>I always enjoyed playing videogames since I was 4 years old and I got my first computer. When I grew I had
-           the need to make the world a better place, and I also discovered the joy of creating software that, by my
-           surprise, it actually works and do stuff! That's why I worked in gamification and serious games in my TFM and
-           TFG. I'd like to work developing software that makes the lives of others better, either by making videogames
-           (who doesn't enjoy playing them?), or something to help people with disadvantages (like my TFM), or even
-           without them, just to make people's lives easier and more enjoyable!</p>
-
-        <!--TODO add links to my TFM and TFG.-->
-        <div class=divider></div>
-        <h2>MRPs (Most Relevant Projects)</h2>
-        <div id="TFG">
-            <h5>El Planeta más Bonito (The Most Beautiful Planet)</h5>
-            <p>This is my TFG (Trabajo de Fin de Grado: Final Degree Project). It's an interactive story for kids 6 to 8
-               years old about a mother and her two children, who travel to another world and need to confront some
-               problems about family and what's really important in our lives. It has some tests questions and minigames
-               that needs the story to be read by the kid in order to be completed correctly. The purpose of this
-               project is to evaluate the reading comprenhension of the kid without him/her realising it and while
-               he/she enjoys reading a (IMHO) good story and playing some (IMHO) entertaining minigames.</p>
-            <p>It uses <a href=https://coronalabs.com/products/corona-sdk/>Corona SDK</a> code generated by a plugin
-               for <a href=http://www.adobe.com/products/photoshop.html>Adobe Photoshop</a> called <a
-                        href=http://kwiksher.com/>Kwik</a>. All the media used are either free to use or created by me.
-               It can be installed in any Android device via <a
-                        href=https://play.google.com/store/apps/details?id=com.gmail.potrayarrick.build>Google Play</a>.
-            </p>
-            <ul class="collection with-header">
-                <li class=collection-header><h6>Links</h6></li>
-                <li class=collection-item><a href=https://github.com/potray/El_Planeta_mas_Bonito>Github repository</a>
-                </li>
-            </ul>
-
-        </div>
-        <div id="TFM">
-            <h5>Hand Control Platform</h5>
-            <p>This is my TFM (Trabajo de Fin de Máster: Final Master Project). It's a known fact that there are people
-               (most of them old) living in little towns or villages who need to travel for hours to get to a medical
-               center with the equipment to do tests. Focusing on people with psichomotor diseases (Parkinson's Disease,
-               Essential Tremor...), we tried to solve one simple question: Would be possible to give this people a
-               little and cheap contraption (Spain is not a rich country so money is an issue) that they could plug in
-               their computer, do some tests in their home, send the data to a platform, and show it to the doctor in an
-               useful way?</p>
-            <p>We did some research and we concluded it could be possible, so we built a prototype using Legos that
-               incorporates a <a href="https://www.leapmotion.com/">Leap Motion</a>, we created some games (without the
-               help of any doctor, sadly) using <a href="https://unity3d.com/es">Unity 3D</a> that track the hands of
-               the patient and send the data to a web service built using <a href="https://www.djangoproject.com/">Django</a>.
-               The results of the project were (spoiler alert) good, but not perfect: it's possible to develop such a
-               project, but Leap Motion doesn't work flawlessly. With enough budget and the help (and most important,
-               validation) of specialists it could be possible to design, develop and distribute this technology,
-               replacing the Leap Motion for other device.</p>
-            <ul class="collection with-header">
-                <li class=collection-header><h6>Links</h6></li>
-                <li class=collection-item><a href="https://github.com/potray/TFM">Unity 3D source</a></li>
-                <li class=collection-item><a href="https://github.com/potray/TFM-Web">Django source</a></li>
-                <li class=collection-item><a href="http://tfmheroku.herokuapp.com/">Django project hosted in Heroku </a>
-                    (note: it's in a free account, so it might take a while to load).
-                </li>
-            </ul>
-        </div>
-        <h2>LRPs (Less Relevant Projects)</h2>
-        <div id="Pacts">
-            <h5>Pacts</h5>
-            <p>I started this project in summer 2015 as a challenge for myself: would it be possible to develop an app
-               and a service using only Android Studio? The answer was yes, and it ended up well, since Google App
-               Engine works well with Java services (not like with Django... c'mon Google) and you can import Java model
-               classes into an Android class, which makes it easier than dealing with JSON stuff.</p>
-            <p>Why "Pacts"? Have you ever promised (or been promised) with something that is forgotten? Did somebody
-               break a promise (or a blood (or other stuff) pact)? With this app you can track every single detail so
-               you can remember your friends, family or significant other whatever they told you. "It's in the app, so
-               don't try to avoid it".</p>
-            <p>Since this is my first (and only) Android app I developed by myself I feel pretty satisfied with the way
-               it works: the <a
-                        href=https://github.com/potray/Pacts/blob/master/app/src/main/java/es/potrayarrick/pacts/MainActivity.java>
-                    Main Activity</a> receives messages from the fragments and manages all the stuff, so IMHO it's a
-               pretty scalable app.</p>
-            <p>It's currently discontinued since I started working in my TFM and I had no time to finish the
-               project.</p>
-            <ul class="collection with-header">
-                <li class=collection-header><h6>Links</h6></li>
-                <li class=collection-item><a href=https://github.com/potray/Pacts>Github repository</a></li>
-            </ul>
-        </div>
-        <div id="CoCClanManager">
-            <h5>CoC Clan Manager</h5>
-            <p>I play Clash of Clans, and I was in a small clan with all sorts of disorganization problems. As I told
-               before, I like to make stuff easier by developing software, so I started this project. A few days before
-               Supercell launched the <a href=https://developer.clashofclans.com/#/>Clash of Clans API</a>, so I
-               reworked the entire project to use it. Sadly a static IP address is currently needed and the project is
-               hosted in a free Heroku account (yes, I like to use Heroku for deploying Django apps), so I can't use the
-               API ATM.</p>
-            <p>It's currently discontinued until Supercell changes the static IP condition. I know this project is
-               viable using PHP, but I just prefer using Python and Django.</p>
-            <ul class="collection with-header">
-                <li class=collection-header><h6>Links</h6></li>
-                <li class=collection-item><a href=https://github.com/potray/CoCClanManager>Github repository</a></li>
-                <li class=collection-item><a href=resistenciacoc.herokuapp.com>Django project hosted in Heroku</a>
-                    (note: it's in a free account, so it might take a while to load. And yes, I know the weird name
-                    stuff, that was the original name of the project...).
-                </li>
-            </ul>
-        </div>
-        <h2>More projects?</h2>
-        <div id="more_projects">
-            <p>Yes, there are more projects in my <a href=https://github.com/potray?tab=repositories>Github profile</a>,
-               but either I don't consider them important (maybe they are just a practise I uploaded, or a very small
-               project like <a href=https://github.com/potray/CoC-Dump-Elixir>CoC Dump Elixir</a>) or I wasn't as
-               experienced as I consider myself right now, like <a href=https://github.com/potray/TarvosEscape> Tarvos'
-                                                                                                                Escape</a>,
-               a project I know I could do a lot better today. That is why I haven't listed any project more. But there
-               is a lot of stuff about me you can check, just scroll to the top to see other sections of my webpage!</p>
-        </div>
+      </div>
     </div>
+    <p>I'm a Computer Engineer specialized in Software Engineer. I finished my Degree in Computer Engineering in
+      2014, and in 2016 I finished my Master's Degree in Computer Engineering, both of them in the <a
+          href=http://etsiit.ugr.es/>E.T.S.I.I.T of Granada</a>. I specialized in Software Engineering since I
+      always enjoyed programming.</p>
+    <p>I always enjoyed playing videogames since I was 4 years old and I got my first computer. When I grew I had
+      the need to make the world a better place, and I also discovered the joy of creating software that, by my
+      surprise, it actually works and do stuff! That's why I worked in gamification and serious games in my TFM
+      and TFG. I'd like to work developing software that makes the lives of others better, either by making videogames
+      (who doesn't enjoy playing them?), or something to help people with disadvantages (like my TFM), or even
+      without them, just to make people's lives easier and more enjoyable!</p>
+    <p>As I got more and more experience at work I became more aware of the difference between software
+      engineering and software development. While both solve peoples problems, software engineering takes one step ahead
+      and models whatever problem is there to be solved. So if you have to solve the lack of learning apps for kids, a
+      software engineer needs to learn pedagogy. If you need to research whether or not a project is viable, a software
+      engineer needs to research the field of that project. That is why I consider software <b>engineering</b> to be
+      something else most people think it is.</p>
+    <p>I enjoy working in a group of people willing to learn from me and to teach me, so the entire team can grow as a
+      group. I don't like coworkers who keep all their knowledge for themselves, it's just counterproductive.</p>
+    <p>If I would describe my perfect work, it would have this features:</p>
+    <ul class="browser-default">
+      <li>It works with the best and/or newest technologies, and it's not in the stone age of software development</li>
+      <li>Lets its employees time to learn new stuff. A perfect job would make me learn something new every day.</li>
+      <li>Agile Methodologies - Yes please</li>
+      <li>Tests - YES PLEASE</li>
+      <li>No piracy - If a project needs Photoshop the business should provide a license and not make its workers hack
+        it.
+      </li>
+      <li>Workers have the chance to have better conditions when their work becomes better. That means things like
+        salary revisions, promotions, etc.
+      </li>
+    </ul>
+    <p>That means that if you want to offer me a job with these features, I more than happy to have a conversation with you!</p>
+    <!--TODO add links to my TFM and TFG.-->
+    <div class=divider></div>
+    <h2>MRPs (Most Relevant Projects)</h2>
+    <div id="TFG">
+      <h5>El Planeta más Bonito (The Most Beautiful Planet)</h5>
+      <p>This is my TFG (Trabajo de Fin de Grado: Final Degree Project). It's an interactive story for kids 6 to 8
+        years old about a mother and her two children, who travel to another world and need to confront some
+        problems about family and what's really important in our lives. It has some tests questions and
+        minigames that needs the story to be read by the kid in order to be completed correctly. The purpose of this
+        project is to evaluate the reading comprehension of the kid without him/her realising it and while
+        he/she enjoys reading a (IMHO) good story and playing some (IMHO) entertaining minigames.</p>
+      <p>It uses <a href=https://coronalabs.com/products/corona-sdk/>Corona SDK</a> code generated by a plugin
+        for <a href=http://www.adobe.com/products/photoshop.html>Adobe Photoshop</a> called <a
+            href=http://kwiksher.com/>Kwik</a>. All the media used are either free to use or created by me.
+        It can be installed in any Android device via <a
+            href=https://play.google.com/store/apps/details?id=com.gmail.potrayarrick.build>Google Play</a>.
+      </p>
+      <ul class="collection with-header">
+        <li class=collection-header><h6>Links</h6></li>
+        <li class=collection-item><a href=https://github.com/potray/El_Planeta_mas_Bonito>Github repository</a>
+        </li>
+      </ul>
+
+    </div>
+    <div id="TFM">
+      <h5>Hand Control Platform</h5>
+      <p>This is my TFM (Trabajo de Fin de Máster: Final Master Project). It's a known fact that there are people
+        (most of them old) living in little towns or villages who need to travel for hours to get to a medical
+        center with the equipment to do tests. Focusing on people with psichomotor diseases (Parkinson's
+        Disease,
+        Essential Tremor...), we tried to solve one simple question: Would be possible to give this people a
+        little and cheap contraption (Spain is not a rich country so money is an issue) that they could plug in
+        their computer, do some tests in their home, send the data to a platform, and show it to the doctor in
+        an
+        useful way?</p>
+      <p>We did some research and we concluded it could be possible, so we built a prototype using Legos that
+        incorporates a <a href="https://www.leapmotion.com/">Leap Motion</a>, we created some games (without the
+        help of any doctor, sadly) using <a href="https://unity3d.com/es">Unity 3D</a> that track the hands of
+        the patient and send the data to a web service built using <a href="https://www.djangoproject.com/">Django</a>.
+        The results of the project were (spoiler alert) good, but not perfect: it's possible to develop such a
+        project, but Leap Motion doesn't work flawlessly. With enough budget and the help (and most important,
+        validation) of specialists it could be possible to design, develop and distribute this technology,
+        replacing the Leap Motion for other device.</p>
+      <ul class="collection with-header">
+        <li class=collection-header><h6>Links</h6></li>
+        <li class=collection-item><a href="https://github.com/potray/TFM">Unity 3D source</a></li>
+        <li class=collection-item><a href="https://github.com/potray/TFM-Web">Django source</a></li>
+        <li class=collection-item><a href="http://tfmheroku.herokuapp.com/">Django project hosted in Heroku </a>
+          (note: it's in a free account, so it might take a while to load).
+        </li>
+      </ul>
+    </div>
+    <h2>LRPs (Less Relevant Projects)</h2>
+    <div id="Pacts">
+      <h5>Pacts</h5>
+      <p>I started this project in summer 2015 as a challenge for myself: would it be possible to develop an app
+        and a service using only Android Studio? The answer was yes, and it ended up well, since Google App
+        Engine works well with Java services (not like with Django... c'mon Google) and you can import Java
+        model
+        classes into an Android class, which makes it easier than dealing with JSON stuff.</p>
+      <p>Why "Pacts"? Have you ever promised (or been promised) with something that is forgotten? Did somebody
+        break a promise (or a blood (or other stuff) pact)? With this app you can track every single detail so
+        you can remember your friends, family or significant other whatever they told you. "It's in the app, so
+        don't try to avoid it".</p>
+      <p>Since this is my first (and only) Android app I developed by myself I feel pretty satisfied with the way
+        it works: the <a
+            href=https://github.com/potray/Pacts/blob/master/app/src/main/java/es/potrayarrick/pacts/MainActivity.java>
+          Main Activity</a> receives messages from the fragments and manages all the stuff, so IMHO it's a
+        pretty scalable app.</p>
+      <p>It's currently discontinued since I started working in my TFM and I had no time to finish the
+        project.</p>
+      <ul class="collection with-header">
+        <li class=collection-header><h6>Links</h6></li>
+        <li class=collection-item><a href=https://github.com/potray/Pacts>Github repository</a></li>
+      </ul>
+    </div>
+    <div id="CoCClanManager">
+      <h5>CoC Clan Manager</h5>
+      <p>I play Clash of Clans, and I was in a small clan with all sorts of disorganization problems. As I told
+        before, I like to make stuff easier by developing software, so I started this project. A few days before
+        Supercell launched the <a href=https://developer.clashofclans.com/#/>Clash of Clans API</a>, so I
+        reworked the entire project to use it. Sadly a static IP address is currently needed and the project is
+        hosted in a free Heroku account (yes, I like to use Heroku for deploying Django apps), so I can't use
+        the
+        API ATM.</p>
+      <p>It's currently discontinued until Supercell changes the static IP condition. I know this project is
+        viable using PHP, but I just prefer using Python and Django.</p>
+      <ul class="collection with-header">
+        <li class=collection-header><h6>Links</h6></li>
+        <li class=collection-item><a href=https://github.com/potray/CoCClanManager>Github repository</a></li>
+        <li class=collection-item><a href=resistenciacoc.herokuapp.com>Django project hosted in Heroku</a>
+          (note: it's in a free account, so it might take a while to load. And yes, I know the weird name
+          stuff, that was the original name of the project...).
+        </li>
+      </ul>
+    </div>
+    <h2>More projects?</h2>
+    <div id="more_projects">
+      <p>Yes, there are more projects in my <a href=https://github.com/potray?tab=repositories>Github profile</a>,
+        but either I don't consider them important (maybe they are just a practise I uploaded, or a very small
+        project like <a href=https://github.com/potray/CoC-Dump-Elixir>CoC Dump Elixir</a>) or I wasn't as
+        experienced as I consider myself right now, like <a href=https://github.com/potray/TarvosEscape> Tarvos'
+          Escape</a>,
+        a project I know I could do a lot better today. That is why I haven't listed any project more. But there
+        is a lot of stuff about me you can check, just scroll to the top to see other sections of my webpage!
+      </p>
+    </div>
+  </div>
 </main>
 <footer class="page-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5>Contact info:</h5>
-                <p>Tel: +34 656418927</p>
-                <p>Email: potrayarrick@gmail.com</p>
-                <p>Twitter: @DanielSalas_ES</p>
-                <p><a href=other/Currículum.pdf>Curriculum in Spanish</a></p>
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5>Contact info:</h5>
+        <p>Tel: +34 656418927</p>
+        <p>Email: potrayarrick@gmail.com</p>
+        <p>Twitter: @DanielSalas_ES</p>
+        <p><a href=other/Currículum.pdf>Curriculum in Spanish</a></p>
 
-            </div>
-        </div>
+      </div>
     </div>
-    <div class=footer-copyright>
-        <div class=container>
-            Made with <a href="http://materializecss.com/">Materialize CSS</a>
-        </div>
+  </div>
+  <div class=footer-copyright>
+    <div class=container>
+      Made with <a href="http://materializecss.com/">Materialize CSS</a>
     </div>
+  </div>
 </footer>
 </body>
 </html>
